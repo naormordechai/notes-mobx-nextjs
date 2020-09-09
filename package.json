@@ -1,0 +1,35 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@types/clone-deep": "^4.0.1",
+    "@types/mongodb": "^3.5.27",
+    "@types/uuid": "^8.3.0",
+    "axios": "^0.20.0",
+    "clone-deep": "^4.0.1",
+    "mobx": "^5.15.6",
+    "mobx-react": "^6.3.0",
+    "mobx-react-lite": "^2.2.1",
+    "moment": "^2.27.0",
+    "mongodb": "^3.6.1",
+    "next": "latest",
+    "next-connect": "^0.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "typescript": "4.0"
+  },
+  "license": "MIT"
+}

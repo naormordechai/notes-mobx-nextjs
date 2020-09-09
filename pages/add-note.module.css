@@ -1,0 +1,54 @@
+.formControl label,
+.rowAddItem label{
+    width: 150px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.formControl input{
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    box-sizing: border-box;
+
+}
+
+.rowAddItem {
+    display: flex;
+    align-items: center;
+}
+
+.rowAddItem .addItemBtn{
+    padding: 6px 18px;
+    border-radius: 100px;
+    text-align: center;
+    margin-left: 8px;
+    border: 1px solid rgba(0,0,0,.54);
+    cursor: pointer;
+}
+
+.rowAddItem input[type="text"]{
+    width: 181px; /* calc 200px decrease checkbox width */
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.addNoteBtn {
+    border: 1px solid green;;
+    background: inherit;
+    padding: 6px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;;
+}
+
+.addNoteBtn:hover {
+    color: #fff;
+    background: green;
+}

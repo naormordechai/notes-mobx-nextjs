@@ -1,0 +1,12 @@
+.singleItemRow {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.singleItemRow span {
+    display: inline-block;
+    width: 150px;
+}
+
+.singleItemRow button { cursor: pointer; }

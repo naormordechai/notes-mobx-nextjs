@@ -1,0 +1,39 @@
+.card {
+    width: 220px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.54);
+    border-radius: 5px;;
+    margin: 12px;
+    padding: 6px;
+}
+
+.card .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.54);
+}
+
+.card .datesBox {
+    font-size: 12px;
+}
+
+.card .datesBox span {
+    display: block;
+    text-decoration: underline;
+    margin: 5px 0;;
+}
+
+.card .cardHeader .deleteNoteBtn {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.card .cardHeader .deleteNoteBtn:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.card h2 {
+    margin: 0;
+}
