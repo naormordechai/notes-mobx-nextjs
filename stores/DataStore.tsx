@@ -43,6 +43,7 @@ export class DataStore {
             const noteIndex = this.notes!.findIndex(n => n._id === noteId);
             const itemIndex = this.notes![noteIndex].items.findIndex(item => item._id === itemId)
             this.notes![noteIndex].items[itemIndex].isCompleted = !this.notes![noteIndex].items[itemIndex].isCompleted;
+            this.notes![noteIndex].updatedDate = new Date();
             await updateNote(this.notes![noteIndex]);
         } catch (err) {
             console.log(err);

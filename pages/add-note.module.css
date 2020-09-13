@@ -1,12 +1,23 @@
+form.addNoteForm {
+    max-width: 370px;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,.54);
+    border-radius: 5px;
+    padding: 24px;
+
+}
+
+.addNoteTitle { text-align: center; text-decoration: underline;}
+
 .formControl label,
 .rowAddItem label{
-    width: 150px;
+    width: 100px;
     display: inline-block;
     box-sizing: border-box;
 }
 
 .formControl input{
-    width: 200px;
+    width: calc(100% - 100px);
     padding: 6px;
     border-radius: 5px;
     outline: none;
@@ -18,11 +29,11 @@
 .rowAddItem {
     display: flex;
     align-items: center;
+    margin-top: 12px;
 }
 
 .rowAddItem .addItemBtn{
-    padding: 6px 18px;
-    border-radius: 100px;
+    padding: 0 5px;
     text-align: center;
     margin-left: 8px;
     border: 1px solid rgba(0,0,0,.54);
@@ -30,7 +41,7 @@
 }
 
 .rowAddItem input[type="text"]{
-    width: 181px; /* calc 200px decrease checkbox width */
+    width: calc(100% - 135px);
     padding: 6px;
     border-radius: 5px;
     outline: none;
@@ -46,9 +57,16 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: .2s;;
+    width: 100%;
+    margin-top: 12px;
 }
 
 .addNoteBtn:hover {
     color: #fff;
     background: green;
+}
+
+.listItemContainer {
+    height: 100px;
+    overflow-y: auto;
 }

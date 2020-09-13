@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { ListNote } from '../components/ListNote';
 import Link from "next/link";
 import styles from './index.module.css'
+import { Header } from "../components/Header";
 
 type Props = {
   dataStore?: DataStore;
@@ -28,9 +29,11 @@ const IndexPage = inject("dataStore")(
 
     return (
       <>
-        <Link href="/add-note">
-          <a>Add note</a>
-        </Link>
+        <Header>
+          <Link href="/add-note">
+            <a>Add note</a>
+          </Link>
+        </Header>
         <main className={styles.container}>
           {dataStore.notes ? <ListNote
             notes={dataStore.notes}

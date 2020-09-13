@@ -12,8 +12,10 @@ interface Props {
 export const SingleItemAddNote = ({ item, handlerIsCompletedItem, removeItem }: Props) => {
     return (
         <div className={styles.singleItemRow}>
-            <input type="checkbox" checked={item.isCompleted} onChange={() => handlerIsCompletedItem(item._id)} />
-            <span>{item.name}</span>
+            <div>
+                <input type="checkbox" checked={item.isCompleted} onChange={() => handlerIsCompletedItem(item._id)} />
+                <span>{item.name}</span>
+            </div>
             <button onClick={() => removeItem(item._id)}>X</button>
         </div>
     )

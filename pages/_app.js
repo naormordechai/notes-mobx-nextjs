@@ -3,6 +3,9 @@ import React from "react";
 import { Provider } from "mobx-react";
 import { DataStore } from "../stores/DataStore";
 
+import styles from './styles.css';
+
+
 class MyApp extends App {
   state = {
     dataStore: new DataStore()
